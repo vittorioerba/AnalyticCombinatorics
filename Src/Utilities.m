@@ -27,11 +27,9 @@ OrdersArray[x,y,m] creates the list {{x,y},{x,y-1},...,{x,0},{x-1,y},...} and ta
 
 Begin["`Private`"]; (* Begin Private Context *)
 
-Clear[Utilities`ACDev`PadLists];
 ACDev`PadLists[x_List]:= x;
 ACDev`PadLists[x_List, xs__List]:= PadRight[#,Max[Length/@{x,Sequence@xs}]]&/@{x,Sequence@xs};
 
-Clear[Utilities`ACDev`LexiLess];
 ACDev`LexiLess[x2_List,y2_List] := With[
 	{
 	x=(ACDev`PadLists@@{x2,y2})[[1]],
@@ -44,13 +42,10 @@ ACDev`LexiLess[x2_List,y2_List] := With[
 	]
 ];
 
-Clear[ACDev`LexiLessEq];
 ACDev`LexiLessEq[x_List,y_List]:= Equal@@(ACDev`PadLists[x,y]) || ACDev`LexiLess[x,y];
 
-Clear[NonNegativeIntegerQ];
 NonNegativeIntegerQ[x_]/;NumericQ[x]:=(x-Round[x]==0)&&x>=0//FullSimplify;
 
-Clear[ACDev`OrdersArray];
 ACDev`OrdersArray[x_Integer,y_Integer,m_Integer]:=Flatten[Table[{i,j},{i,x,x-m,-1},{j,y,0,-1}],1][[1;;m]];
 
 End[]; (* End Private Context *)

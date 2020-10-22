@@ -5,7 +5,7 @@ Paclet[
     Description -> "A Mathematica paclet to handle asymptotic/singular expansions of generating functions.",
     Extensions  -> {
         {"Kernel", 
-            "Root"->".", 
+            "Root"->"Kernel", 
             "Context"->{
                 "AnalyticCombinatorics`", 
                 "Utilities`",

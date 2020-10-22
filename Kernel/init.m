@@ -4,16 +4,20 @@
     for the structure of this init file
 *)
 
-(* Unprotect package symbols in case package is double-loaded *)
-Unprotect@{"Utilities`*", "AsyScale`*", "TransferTheorem`*"};
+AnalyticCombinatorics`Private`Submodules = {"Utilities", "AsyScale", "TransferTheorem"};
 
-(* Load the package *)
-Get["AnalyticCombinatorics`Utilities`"]
-Get["AnalyticCombinatorics`AsyScale`"]
-Get["AnalyticCombinatorics`TransferTheorem`"]
+AnalyticCombinatorics`Private`Contexts = # <> "`*" & /@ Append[ AnalyticCombinatorics`Private`Submodules, "ACDev"];
+
+AnalyticCombinatorics`Private`Files = # <> ".m" & /@ AnalyticCombinatorics`Private`Submodules;
+
+(* Unprotect package symbols in case package is double-loaded *)
+Unprotect/@AnalyticCombinatorics`Private`Contexts;
+
+(* Load the submodules *)
+Get[FileNameJoin[{NotebookDirectory[], "Src", #}]]& /@ AnalyticCombinatorics`Private`Files;
 
 (* Protect all package symbols *)
 SetAttributes[
-  Evaluate@Flatten[Names /@ {"Utilities`", "AsyScale`*", "TransferTheorem`*"}],
+  Evaluate@Flatten[Names /@ AnalyticCombinatorics`Private`Contexts],
   {Protected, ReadProtected}
-]
+];

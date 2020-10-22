@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     19177,        387]
-NotebookOptionsPosition[     18666,        370]
-NotebookOutlinePosition[     19002,        385]
-CellTagsIndexPosition[     18959,        382]
+NotebookDataLength[     19325,        390]
+NotebookOptionsPosition[     18813,        373]
+NotebookOutlinePosition[     19149,        388]
+CellTagsIndexPosition[     19106,        385]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -25,10 +25,10 @@ Cell[BoxData[{
  RowBox[{
   RowBox[{"<<", "\"\<AnalyticCombinatorics`\>\""}], ";"}]}], "Input",
  CellChangeTimes->{{3.812349696643622*^9, 3.8123497276661787`*^9}, {
-  3.8123499515857277`*^9, 3.8123499584545317`*^9}, {3.812350401549417*^9, 
-  3.812350403164887*^9}, {3.812351007035071*^9, 3.812351007744175*^9}, {
-  3.812351064892315*^9, 3.812351089256052*^9}},
- CellLabel->"In[1]:=",ExpressionUUID->"c955c369-4109-41dd-b003-c6bdc2aa7f73"],
+   3.8123499515857277`*^9, 3.8123499584545317`*^9}, {3.812350401549417*^9, 
+   3.812350403164887*^9}, {3.812351007035071*^9, 3.812351007744175*^9}, {
+   3.812351064892315*^9, 3.812351089256052*^9}, 3.812351341372305*^9},
+ CellLabel->"In[13]:=",ExpressionUUID->"c955c369-4109-41dd-b003-c6bdc2aa7f73"],
 
 Cell[CellGroupData[{
 
@@ -47,13 +47,14 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{
          RowBox[{"NotebookDirectory", "[", "]"}], ",", "\"\<Tests\>\"", ",", 
-         "\"\<Utilities.wl\>\""}], "}"}], "]"}]}]}], ")"}]}]}]], "Input",
+         "\"\<*\>\""}], "}"}], "]"}]}]}], ")"}]}]}]], "Input",
  CellChangeTimes->{{3.812349972361094*^9, 3.812349973036441*^9}, {
   3.81235013567092*^9, 3.8123501358061953`*^9}, {3.812350345524248*^9, 
   3.812350345659786*^9}, {3.812350409688529*^9, 3.81235041436159*^9}, {
   3.812350483140448*^9, 3.812350487138094*^9}, {3.812351120895585*^9, 
-  3.812351138779735*^9}, {3.812351168970456*^9, 3.81235116999821*^9}},
- CellLabel->"In[5]:=",ExpressionUUID->"beb87f6d-adaf-4f90-a04d-1b7d33c1fa18"],
+  3.812351138779735*^9}, {3.812351168970456*^9, 3.81235116999821*^9}, {
+  3.812351376182384*^9, 3.812351376997746*^9}},
+ CellLabel->"In[15]:=",ExpressionUUID->"beb87f6d-adaf-4f90-a04d-1b7d33c1fa18"],
 
 Cell[BoxData[
  TagBox[GridBox[{
@@ -216,7 +217,7 @@ Cell[BoxData[
       TestReportObject[
        Association[
        "Title" -> "Test Report: Utilities.wl", "TimeElapsed" -> 
-        Quantity[0.26, "Seconds"], "TestsSucceededCount" -> 12, 
+        Quantity[0.27, "Seconds"], "TestsSucceededCount" -> 12, 
         "TestsFailedCount" -> 0, "TestsFailedWrongResultsCount" -> 0, 
         "TestsFailedWithMessagesCount" -> 0, "TestsFailedWithErrorsCount" -> 
         0, "Aborted" -> False, "TestResults" -> 
@@ -227,9 +228,9 @@ Cell[BoxData[
                ACDev`PadLists[{1}]], "ExpectedOutput" -> HoldForm[{1}], 
              "ActualOutput" -> HoldForm[{1}], "ExpectedMessages" -> {}, 
              "ActualMessages" -> {}, "AbsoluteTimeUsed" -> 
-             Quantity[0.000085`2.079933923546286, "Seconds"], "CPUTimeUsed" -> 
-             Quantity[0.00008300000000005525, "Seconds"], "MemoryUsed" -> 
-             Quantity[112, "Bytes"]]], 2 -> TestResultObject[
+             Quantity[0.000099`2.1461501924295394, "Seconds"], "CPUTimeUsed" -> 
+             Quantity[0.00009799999999948739, "Seconds"], "MemoryUsed" -> 
+             Quantity[2104, "Bytes"]]], 2 -> TestResultObject[
             Association[
             "TestClass" -> None, "TestIndex" -> 2, "TestID" -> None, 
              "Outcome" -> "Success", "Input" -> HoldForm[
@@ -237,9 +238,9 @@ Cell[BoxData[
              HoldForm[{{2, 3, 4}, {"a", 0, 0}}], "ActualOutput" -> 
              HoldForm[{{2, 3, 4}, {"a", 0, 0}}], "ExpectedMessages" -> {}, 
              "ActualMessages" -> {}, "AbsoluteTimeUsed" -> 
-             Quantity[0.000087`2.0900342504506124, "Seconds"], "CPUTimeUsed" -> 
-             Quantity[0.00008600000000047459, "Seconds"], "MemoryUsed" -> 
-             Quantity[296, "Bytes"]]], 3 -> TestResultObject[
+             Quantity[0.000088`2.0949976699821606, "Seconds"], "CPUTimeUsed" -> 
+             Quantity[0.00008699999999972619, "Seconds"], "MemoryUsed" -> 
+             Quantity[440, "Bytes"]]], 3 -> TestResultObject[
             Association[
             "TestClass" -> None, "TestIndex" -> 3, "TestID" -> None, 
              "Outcome" -> "Success", "Input" -> HoldForm[
@@ -247,8 +248,8 @@ Cell[BoxData[
              HoldForm[False], "ActualOutput" -> HoldForm[False], 
              "ExpectedMessages" -> {}, "ActualMessages" -> {}, 
              "AbsoluteTimeUsed" -> 
-             Quantity[0.000118`2.222397005138119, "Seconds"], "CPUTimeUsed" -> 
-             Quantity[0.00011700000000036681`, "Seconds"], "MemoryUsed" -> 
+             Quantity[0.000118`2.222397005138115, "Seconds"], "CPUTimeUsed" -> 
+             Quantity[0.00011600000000022703`, "Seconds"], "MemoryUsed" -> 
              Quantity[112, "Bytes"]]], 4 -> TestResultObject[
             Association[
             "TestClass" -> None, "TestIndex" -> 4, "TestID" -> None, 
@@ -257,9 +258,9 @@ Cell[BoxData[
              HoldForm[True], "ActualOutput" -> HoldForm[True], 
              "ExpectedMessages" -> {}, "ActualMessages" -> {}, 
              "AbsoluteTimeUsed" -> 
-             Quantity[0.00011`2.191907682990219, "Seconds"], "CPUTimeUsed" -> 
-             Quantity[0.00010699999999985721`, "Seconds"], "MemoryUsed" -> 
-             Quantity[112, "Bytes"]]], 5 -> TestResultObject[
+             Quantity[0.000111`2.1958379766186513, "Seconds"], "CPUTimeUsed" -> 
+             Quantity[0.00010900000000013677`, "Seconds"], "MemoryUsed" -> 
+             Quantity[256, "Bytes"]]], 5 -> TestResultObject[
             Association[
             "TestClass" -> None, "TestIndex" -> 5, "TestID" -> None, 
              "Outcome" -> "Success", "Input" -> HoldForm[
@@ -267,8 +268,8 @@ Cell[BoxData[
              HoldForm[False], "ActualOutput" -> HoldForm[False], 
              "ExpectedMessages" -> {}, "ActualMessages" -> {}, 
              "AbsoluteTimeUsed" -> 
-             Quantity[0.000097`2.137286732098239, "Seconds"], "CPUTimeUsed" -> 
-             Quantity[0.00009500000000040032, "Seconds"], "MemoryUsed" -> 
+             Quantity[0.000093`2.1189979463859245, "Seconds"], "CPUTimeUsed" -> 
+             Quantity[0.0000919999999995369, "Seconds"], "MemoryUsed" -> 
              Quantity[112, "Bytes"]]], 6 -> TestResultObject[
             Association[
             "TestClass" -> None, "TestIndex" -> 6, "TestID" -> None, 
@@ -277,8 +278,8 @@ Cell[BoxData[
              HoldForm[False], "ActualOutput" -> HoldForm[False], 
              "ExpectedMessages" -> {}, "ActualMessages" -> {}, 
              "AbsoluteTimeUsed" -> 
-             Quantity[0.00012`2.2296962438796184, "Seconds"], "CPUTimeUsed" -> 
-             Quantity[0.0001180000000000625, "Seconds"], "MemoryUsed" -> 
+             Quantity[0.000117`2.2187008595781514, "Seconds"], "CPUTimeUsed" -> 
+             Quantity[0.00011500000000008725`, "Seconds"], "MemoryUsed" -> 
              Quantity[112, "Bytes"]]], 7 -> TestResultObject[
             Association[
             "TestClass" -> None, "TestIndex" -> 7, "TestID" -> None, 
@@ -287,8 +288,8 @@ Cell[BoxData[
              HoldForm[True], "ActualOutput" -> HoldForm[True], 
              "ExpectedMessages" -> {}, "ActualMessages" -> {}, 
              "AbsoluteTimeUsed" -> 
-             Quantity[0.000117`2.2187008595781554, "Seconds"], "CPUTimeUsed" -> 
-             Quantity[0.00011500000000008725`, "Seconds"], "MemoryUsed" -> 
+             Quantity[0.000113`2.2035934413154092, "Seconds"], "CPUTimeUsed" -> 
+             Quantity[0.00011099999999952814`, "Seconds"], "MemoryUsed" -> 
              Quantity[112, "Bytes"]]], 8 -> TestResultObject[
             Association[
             "TestClass" -> None, "TestIndex" -> 8, "TestID" -> None, 
@@ -297,8 +298,8 @@ Cell[BoxData[
              HoldForm[True], "ActualOutput" -> HoldForm[True], 
              "ExpectedMessages" -> {}, "ActualMessages" -> {}, 
              "AbsoluteTimeUsed" -> 
-             Quantity[0.000084`2.0747942838938753, "Seconds"], "CPUTimeUsed" -> 
-             Quantity[0.00008199999999991547, "Seconds"], "MemoryUsed" -> 
+             Quantity[0.00008`2.053604984823933, "Seconds"], "CPUTimeUsed" -> 
+             Quantity[0.00007899999999949614, "Seconds"], "MemoryUsed" -> 
              Quantity[112, "Bytes"]]], 9 -> TestResultObject[
             Association[
             "TestClass" -> None, "TestIndex" -> 9, "TestID" -> None, 
@@ -307,9 +308,9 @@ Cell[BoxData[
              HoldForm[False], "ActualOutput" -> HoldForm[False], 
              "ExpectedMessages" -> {}, "ActualMessages" -> {}, 
              "AbsoluteTimeUsed" -> 
-             Quantity[0.000102`2.1591151695939113, "Seconds"], "CPUTimeUsed" -> 
-             Quantity[0.00009999999999976694, "Seconds"], "MemoryUsed" -> 
-             Quantity[112, "Bytes"]]], 10 -> TestResultObject[
+             Quantity[0.001047`3.170461679510832, "Seconds"], "CPUTimeUsed" -> 
+             Quantity[0.0010409999999998476`, "Seconds"], "MemoryUsed" -> 
+             Quantity[21056, "Bytes"]]], 10 -> TestResultObject[
             Association[
             "TestClass" -> None, "TestIndex" -> 10, "TestID" -> None, 
              "Outcome" -> "Success", "Input" -> HoldForm[
@@ -317,9 +318,9 @@ Cell[BoxData[
              "ExpectedOutput" -> HoldForm[True], "ActualOutput" -> 
              HoldForm[True], "ExpectedMessages" -> {}, "ActualMessages" -> {},
               "AbsoluteTimeUsed" -> 
-             Quantity[0.001058`3.175000665531161, "Seconds"], "CPUTimeUsed" -> 
-             Quantity[0.001142999999999894, "Seconds"], "MemoryUsed" -> 
-             Quantity[264, "Bytes"]]], 11 -> TestResultObject[
+             Quantity[0.005131`3.860717012487379, "Seconds"], "CPUTimeUsed" -> 
+             Quantity[0.005298999999999943, "Seconds"], "MemoryUsed" -> 
+             Quantity[866552, "Bytes"]]], 11 -> TestResultObject[
             Association[
             "TestClass" -> None, "TestIndex" -> 11, "TestID" -> None, 
              "Outcome" -> "Success", "Input" -> HoldForm[
@@ -327,8 +328,8 @@ Cell[BoxData[
              HoldForm[False], "ActualOutput" -> HoldForm[False], 
              "ExpectedMessages" -> {}, "ActualMessages" -> {}, 
              "AbsoluteTimeUsed" -> 
-             Quantity[0.000083`2.0695930902080675, "Seconds"], "CPUTimeUsed" -> 
-             Quantity[0.00008100000000066387, "Seconds"], "MemoryUsed" -> 
+             Quantity[0.000087`2.0900342504506084, "Seconds"], "CPUTimeUsed" -> 
+             Quantity[0.00008599999999958641, "Seconds"], "MemoryUsed" -> 
              Quantity[112, "Bytes"]]], 12 -> TestResultObject[
             Association[
             "TestClass" -> None, "TestIndex" -> 12, "TestID" -> None, 
@@ -339,8 +340,8 @@ Cell[BoxData[
              HoldForm[{{4, 2}, {4, 1}, {4, 0}, {3, 2}, {3, 1}}], 
              "ExpectedMessages" -> {}, "ActualMessages" -> {}, 
              "AbsoluteTimeUsed" -> 
-             Quantity[0.000082`2.0643288502157104, "Seconds"], "CPUTimeUsed" -> 
-             Quantity[0.00007999999999963592, "Seconds"], "MemoryUsed" -> 
+             Quantity[0.000086`2.0850134490755594, "Seconds"], "CPUTimeUsed" -> 
+             Quantity[0.00008399999999930685, "Seconds"], "MemoryUsed" -> 
              Quantity[472, "Bytes"]]]], 
         "TestsSucceededIndices" -> {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}, 
         "TestsFailedIndices" -> {}, "TestsFailedWrongResultsIndices" -> {}, 
@@ -363,9 +364,11 @@ Cell[BoxData[
  CellChangeTimes->{
   3.8123497299750957`*^9, {3.812349946328725*^9, 3.81234997395196*^9}, 
    3.812350138606526*^9, 3.812350346249216*^9, 3.812350488150215*^9, {
-   3.812351116720195*^9, 3.812351140007243*^9}, 3.812351170871846*^9},
+   3.812351116720195*^9, 3.812351140007243*^9}, 3.812351170871846*^9, 
+   3.812351378195023*^9, 3.812351772905168*^9, 3.812352387285102*^9},
  CellLabel->
-  "Out[5]//TableForm=",ExpressionUUID->"cdc7cc50-60c3-4043-a387-caab6b6e4d55"]
+  "Out[15]//TableForm=",ExpressionUUID->"f64b3acf-0b51-46f5-b6ce-\
+5b051a0e1872"]
 }, Open  ]]
 },
 WindowSize->{1896, 1026},
@@ -384,10 +387,10 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 545, 10, 82, "Input",ExpressionUUID->"c955c369-4109-41dd-b003-c6bdc2aa7f73"],
+Cell[558, 20, 571, 10, 82, "Input",ExpressionUUID->"c955c369-4109-41dd-b003-c6bdc2aa7f73"],
 Cell[CellGroupData[{
-Cell[1128, 34, 966, 21, 51, "Input",ExpressionUUID->"beb87f6d-adaf-4f90-a04d-1b7d33c1fa18"],
-Cell[2097, 57, 16553, 310, 119, "Output",ExpressionUUID->"cdc7cc50-60c3-4043-a387-caab6b6e4d55"]
+Cell[1154, 34, 1005, 22, 51, "Input",ExpressionUUID->"beb87f6d-adaf-4f90-a04d-1b7d33c1fa18"],
+Cell[2162, 58, 16635, 312, 119, "Output",ExpressionUUID->"f64b3acf-0b51-46f5-b6ce-5b051a0e1872"]
 }, Open  ]]
 }
 ]
