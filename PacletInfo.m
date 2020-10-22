@@ -6,7 +6,12 @@ Paclet[
     Extensions  -> {
         {"Kernel", 
             "Root"->".", 
-            "Context"->{"AnalyticCombinatorics`"}
+            "Context"->{
+                "AnalyticCombinatorics`", 
+                "Utilities`",
+                "AsyScale`", 
+                "TransferTheorem`",
+            }
         },
         {"Documentation", 
             "Language" -> "English",

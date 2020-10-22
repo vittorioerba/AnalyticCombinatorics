@@ -1,0 +1,395 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     19177,        387]
+NotebookOptionsPosition[     18666,        370]
+NotebookOutlinePosition[     19002,        385]
+CellTagsIndexPosition[     18959,        382]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"PacletDirectoryAdd", "@", 
+   RowBox[{"NotebookDirectory", "[", "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"<<", "\"\<AnalyticCombinatorics`\>\""}], ";"}]}], "Input",
+ CellChangeTimes->{{3.812349696643622*^9, 3.8123497276661787`*^9}, {
+  3.8123499515857277`*^9, 3.8123499584545317`*^9}, {3.812350401549417*^9, 
+  3.812350403164887*^9}, {3.812351007035071*^9, 3.812351007744175*^9}, {
+  3.812351064892315*^9, 3.812351089256052*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"c955c369-4109-41dd-b003-c6bdc2aa7f73"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"$testReport", "=", 
+  RowBox[{"TableForm", "@", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"FileNameTake", "[", "#", "]"}], ",", 
+        RowBox[{"TestReport", "[", "#", "]"}]}], "}"}], "&"}], "/@", 
+     RowBox[{"FileNames", "@", 
+      RowBox[{"FileNameJoin", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"NotebookDirectory", "[", "]"}], ",", "\"\<Tests\>\"", ",", 
+         "\"\<Utilities.wl\>\""}], "}"}], "]"}]}]}], ")"}]}]}]], "Input",
+ CellChangeTimes->{{3.812349972361094*^9, 3.812349973036441*^9}, {
+  3.81235013567092*^9, 3.8123501358061953`*^9}, {3.812350345524248*^9, 
+  3.812350345659786*^9}, {3.812350409688529*^9, 3.81235041436159*^9}, {
+  3.812350483140448*^9, 3.812350487138094*^9}, {3.812351120895585*^9, 
+  3.812351138779735*^9}, {3.812351168970456*^9, 3.81235116999821*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"beb87f6d-adaf-4f90-a04d-1b7d33c1fa18"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"\<\"Utilities.wl\"\>", 
+     InterpretationBox[
+      RowBox[{
+       TagBox["TestReportObject",
+        "SummaryHead"], "[", 
+       DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = 
+        "Ready"}, 
+        TemplateBox[{PaneSelectorBox[{False -> GridBox[{{
+                PaneBox[
+                 ButtonBox[
+                  DynamicBox[
+                   FEPrivate`FrontEndResource[
+                   "FEBitmaps", "SquarePlusIconMedium"]], 
+                  ButtonFunction :> (Typeset`open$$ = True), Appearance -> 
+                  None, Evaluator -> Automatic, Method -> "Preemptive"], 
+                 Alignment -> {Center, Center}, ImageSize -> 
+                 Dynamic[{
+                   Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                    AbsoluteCurrentValue[Magnification]}]], 
+                GraphicsBox[{
+                  InsetBox[
+                   BoxData[
+                    FormBox[
+                    PaneBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "MUnitExpressions", "SuccessIcon"]], Alignment -> Center, 
+                    ImageSize -> 
+                    Dynamic[{
+                    Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                    AbsoluteCurrentValue[Magnification]}]], 
+                    TraditionalForm]]]}, PlotRange -> {{0, 1}, {0, 1}}, 
+                 Background -> GrayLevel[0.93], Axes -> False, AspectRatio -> 
+                 1, ImageSize -> 
+                 Dynamic[{
+                   Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                    AbsoluteCurrentValue[Magnification]}], Frame -> True, 
+                 FrameTicks -> None, FrameStyle -> Directive[
+                   Thickness[Tiny], 
+                   GrayLevel[0.55]]], 
+                GridBox[{{
+                   RowBox[{
+                    TagBox["\"Title: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["\"Test Report: Utilities.wl\"", "SummaryItem"]}], 
+                   "\[SpanFromLeft]"}, {
+                   RowBox[{
+                    TagBox["\"Success rate: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox[
+                    TemplateBox[{"100", "\"%\""}, "RowDefault"], 
+                    "SummaryItem"]}], 
+                   RowBox[{
+                    TagBox["\"Tests run: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["12", "SummaryItem"]}]}}, 
+                 GridBoxAlignment -> {
+                  "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+                 False, GridBoxItemSize -> {
+                  "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                 GridBoxSpacings -> {
+                  "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+                 BaseStyle -> {
+                  ShowStringCharacters -> False, NumberMarks -> False, 
+                   PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+              GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
+              GridBoxItemSize -> {
+               "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+              BaselinePosition -> {1, 1}], True -> GridBox[{{
+                PaneBox[
+                 ButtonBox[
+                  DynamicBox[
+                   FEPrivate`FrontEndResource[
+                   "FEBitmaps", "SquareMinusIconMedium"]], 
+                  ButtonFunction :> (Typeset`open$$ = False), Appearance -> 
+                  None, Evaluator -> Automatic, Method -> "Preemptive"], 
+                 Alignment -> {Center, Center}, ImageSize -> 
+                 Dynamic[{
+                   Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                    AbsoluteCurrentValue[Magnification]}]], 
+                GraphicsBox[{
+                  InsetBox[
+                   BoxData[
+                    FormBox[
+                    PaneBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "MUnitExpressions", "SuccessIcon"]], Alignment -> Center, 
+                    ImageSize -> 
+                    Dynamic[{
+                    Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                    AbsoluteCurrentValue[Magnification]}]], 
+                    TraditionalForm]]]}, PlotRange -> {{0, 1}, {0, 1}}, 
+                 Background -> GrayLevel[0.93], Axes -> False, AspectRatio -> 
+                 1, ImageSize -> 
+                 Dynamic[{
+                   Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                    AbsoluteCurrentValue[Magnification]}], Frame -> True, 
+                 FrameTicks -> None, FrameStyle -> Directive[
+                   Thickness[Tiny], 
+                   GrayLevel[0.55]]], 
+                GridBox[{{
+                   RowBox[{
+                    TagBox["\"Title: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["\"Test Report: Utilities.wl\"", "SummaryItem"]}], 
+                   "\[SpanFromLeft]"}, {
+                   RowBox[{
+                    TagBox["\"Success rate: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox[
+                    TemplateBox[{"100", "\"%\""}, "RowDefault"], 
+                    "SummaryItem"]}], 
+                   RowBox[{
+                    TagBox["\"Tests run: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["12", "SummaryItem"]}]}, {
+                   RowBox[{
+                    TagBox["\"Succeeded: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["12", "SummaryItem"]}], "\[SpanFromLeft]"}, {
+                   RowBox[{
+                    TagBox["\"Failed: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["0", "SummaryItem"]}], "\[SpanFromLeft]"}, {
+                   RowBox[{
+                    TagBox[
+                    "\"Failed with wrong results: \"", 
+                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                    TagBox["0", "SummaryItem"]}], "\[SpanFromLeft]"}, {
+                   RowBox[{
+                    TagBox[
+                    "\"Failed with messages: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["0", "SummaryItem"]}], "\[SpanFromLeft]"}, {
+                   RowBox[{
+                    TagBox[
+                    "\"Failed with errors: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["0", "SummaryItem"]}], "\[SpanFromLeft]"}}, 
+                 GridBoxAlignment -> {
+                  "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+                 False, GridBoxItemSize -> {
+                  "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                 GridBoxSpacings -> {
+                  "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+                 BaseStyle -> {
+                  ShowStringCharacters -> False, NumberMarks -> False, 
+                   PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+              GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
+              GridBoxItemSize -> {
+               "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+              BaselinePosition -> {1, 1}]}, 
+           Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+         "SummaryPanel"],
+        DynamicModuleValues:>{}], "]"}],
+      TestReportObject[
+       Association[
+       "Title" -> "Test Report: Utilities.wl", "TimeElapsed" -> 
+        Quantity[0.26, "Seconds"], "TestsSucceededCount" -> 12, 
+        "TestsFailedCount" -> 0, "TestsFailedWrongResultsCount" -> 0, 
+        "TestsFailedWithMessagesCount" -> 0, "TestsFailedWithErrorsCount" -> 
+        0, "Aborted" -> False, "TestResults" -> 
+        Association[1 -> TestResultObject[
+            Association[
+            "TestClass" -> None, "TestIndex" -> 1, "TestID" -> None, 
+             "Outcome" -> "Success", "Input" -> HoldForm[
+               ACDev`PadLists[{1}]], "ExpectedOutput" -> HoldForm[{1}], 
+             "ActualOutput" -> HoldForm[{1}], "ExpectedMessages" -> {}, 
+             "ActualMessages" -> {}, "AbsoluteTimeUsed" -> 
+             Quantity[0.000085`2.079933923546286, "Seconds"], "CPUTimeUsed" -> 
+             Quantity[0.00008300000000005525, "Seconds"], "MemoryUsed" -> 
+             Quantity[112, "Bytes"]]], 2 -> TestResultObject[
+            Association[
+            "TestClass" -> None, "TestIndex" -> 2, "TestID" -> None, 
+             "Outcome" -> "Success", "Input" -> HoldForm[
+               ACDev`PadLists[{2, 3, 4}, {"a"}]], "ExpectedOutput" -> 
+             HoldForm[{{2, 3, 4}, {"a", 0, 0}}], "ActualOutput" -> 
+             HoldForm[{{2, 3, 4}, {"a", 0, 0}}], "ExpectedMessages" -> {}, 
+             "ActualMessages" -> {}, "AbsoluteTimeUsed" -> 
+             Quantity[0.000087`2.0900342504506124, "Seconds"], "CPUTimeUsed" -> 
+             Quantity[0.00008600000000047459, "Seconds"], "MemoryUsed" -> 
+             Quantity[296, "Bytes"]]], 3 -> TestResultObject[
+            Association[
+            "TestClass" -> None, "TestIndex" -> 3, "TestID" -> None, 
+             "Outcome" -> "Success", "Input" -> HoldForm[
+               ACDev`LexiLess[{1, 2}, {0, 0, 15}]], "ExpectedOutput" -> 
+             HoldForm[False], "ActualOutput" -> HoldForm[False], 
+             "ExpectedMessages" -> {}, "ActualMessages" -> {}, 
+             "AbsoluteTimeUsed" -> 
+             Quantity[0.000118`2.222397005138119, "Seconds"], "CPUTimeUsed" -> 
+             Quantity[0.00011700000000036681`, "Seconds"], "MemoryUsed" -> 
+             Quantity[112, "Bytes"]]], 4 -> TestResultObject[
+            Association[
+            "TestClass" -> None, "TestIndex" -> 4, "TestID" -> None, 
+             "Outcome" -> "Success", "Input" -> HoldForm[
+               ACDev`LexiLess[{0, 0}, {1}]], "ExpectedOutput" -> 
+             HoldForm[True], "ActualOutput" -> HoldForm[True], 
+             "ExpectedMessages" -> {}, "ActualMessages" -> {}, 
+             "AbsoluteTimeUsed" -> 
+             Quantity[0.00011`2.191907682990219, "Seconds"], "CPUTimeUsed" -> 
+             Quantity[0.00010699999999985721`, "Seconds"], "MemoryUsed" -> 
+             Quantity[112, "Bytes"]]], 5 -> TestResultObject[
+            Association[
+            "TestClass" -> None, "TestIndex" -> 5, "TestID" -> None, 
+             "Outcome" -> "Success", "Input" -> HoldForm[
+               ACDev`LexiLess[{1, 0}, {1}]], "ExpectedOutput" -> 
+             HoldForm[False], "ActualOutput" -> HoldForm[False], 
+             "ExpectedMessages" -> {}, "ActualMessages" -> {}, 
+             "AbsoluteTimeUsed" -> 
+             Quantity[0.000097`2.137286732098239, "Seconds"], "CPUTimeUsed" -> 
+             Quantity[0.00009500000000040032, "Seconds"], "MemoryUsed" -> 
+             Quantity[112, "Bytes"]]], 6 -> TestResultObject[
+            Association[
+            "TestClass" -> None, "TestIndex" -> 6, "TestID" -> None, 
+             "Outcome" -> "Success", "Input" -> HoldForm[
+               ACDev`LexiLessEq[{1, 2}, {0, 0, 15}]], "ExpectedOutput" -> 
+             HoldForm[False], "ActualOutput" -> HoldForm[False], 
+             "ExpectedMessages" -> {}, "ActualMessages" -> {}, 
+             "AbsoluteTimeUsed" -> 
+             Quantity[0.00012`2.2296962438796184, "Seconds"], "CPUTimeUsed" -> 
+             Quantity[0.0001180000000000625, "Seconds"], "MemoryUsed" -> 
+             Quantity[112, "Bytes"]]], 7 -> TestResultObject[
+            Association[
+            "TestClass" -> None, "TestIndex" -> 7, "TestID" -> None, 
+             "Outcome" -> "Success", "Input" -> HoldForm[
+               ACDev`LexiLessEq[{0, 0}, {1}]], "ExpectedOutput" -> 
+             HoldForm[True], "ActualOutput" -> HoldForm[True], 
+             "ExpectedMessages" -> {}, "ActualMessages" -> {}, 
+             "AbsoluteTimeUsed" -> 
+             Quantity[0.000117`2.2187008595781554, "Seconds"], "CPUTimeUsed" -> 
+             Quantity[0.00011500000000008725`, "Seconds"], "MemoryUsed" -> 
+             Quantity[112, "Bytes"]]], 8 -> TestResultObject[
+            Association[
+            "TestClass" -> None, "TestIndex" -> 8, "TestID" -> None, 
+             "Outcome" -> "Success", "Input" -> HoldForm[
+               ACDev`LexiLessEq[{1, 0}, {1}]], "ExpectedOutput" -> 
+             HoldForm[True], "ActualOutput" -> HoldForm[True], 
+             "ExpectedMessages" -> {}, "ActualMessages" -> {}, 
+             "AbsoluteTimeUsed" -> 
+             Quantity[0.000084`2.0747942838938753, "Seconds"], "CPUTimeUsed" -> 
+             Quantity[0.00008199999999991547, "Seconds"], "MemoryUsed" -> 
+             Quantity[112, "Bytes"]]], 9 -> TestResultObject[
+            Association[
+            "TestClass" -> None, "TestIndex" -> 9, "TestID" -> None, 
+             "Outcome" -> "Success", "Input" -> HoldForm[
+               Utilities`NonNegativeIntegerQ[Pi]], "ExpectedOutput" -> 
+             HoldForm[False], "ActualOutput" -> HoldForm[False], 
+             "ExpectedMessages" -> {}, "ActualMessages" -> {}, 
+             "AbsoluteTimeUsed" -> 
+             Quantity[0.000102`2.1591151695939113, "Seconds"], "CPUTimeUsed" -> 
+             Quantity[0.00009999999999976694, "Seconds"], "MemoryUsed" -> 
+             Quantity[112, "Bytes"]]], 10 -> TestResultObject[
+            Association[
+            "TestClass" -> None, "TestIndex" -> 10, "TestID" -> None, 
+             "Outcome" -> "Success", "Input" -> HoldForm[
+               Utilities`NonNegativeIntegerQ[GoldenRatio - 1/GoldenRatio]], 
+             "ExpectedOutput" -> HoldForm[True], "ActualOutput" -> 
+             HoldForm[True], "ExpectedMessages" -> {}, "ActualMessages" -> {},
+              "AbsoluteTimeUsed" -> 
+             Quantity[0.001058`3.175000665531161, "Seconds"], "CPUTimeUsed" -> 
+             Quantity[0.001142999999999894, "Seconds"], "MemoryUsed" -> 
+             Quantity[264, "Bytes"]]], 11 -> TestResultObject[
+            Association[
+            "TestClass" -> None, "TestIndex" -> 11, "TestID" -> None, 
+             "Outcome" -> "Success", "Input" -> HoldForm[
+               Utilities`NonNegativeIntegerQ[-1]], "ExpectedOutput" -> 
+             HoldForm[False], "ActualOutput" -> HoldForm[False], 
+             "ExpectedMessages" -> {}, "ActualMessages" -> {}, 
+             "AbsoluteTimeUsed" -> 
+             Quantity[0.000083`2.0695930902080675, "Seconds"], "CPUTimeUsed" -> 
+             Quantity[0.00008100000000066387, "Seconds"], "MemoryUsed" -> 
+             Quantity[112, "Bytes"]]], 12 -> TestResultObject[
+            Association[
+            "TestClass" -> None, "TestIndex" -> 12, "TestID" -> None, 
+             "Outcome" -> "Success", "Input" -> HoldForm[
+               ACDev`OrdersArray[4, 2, 5]], "ExpectedOutput" -> 
+             HoldForm[{{4, 2}, {4, 1}, {4, 0}, {3, 2}, {3, 1}}], 
+             "ActualOutput" -> 
+             HoldForm[{{4, 2}, {4, 1}, {4, 0}, {3, 2}, {3, 1}}], 
+             "ExpectedMessages" -> {}, "ActualMessages" -> {}, 
+             "AbsoluteTimeUsed" -> 
+             Quantity[0.000082`2.0643288502157104, "Seconds"], "CPUTimeUsed" -> 
+             Quantity[0.00007999999999963592, "Seconds"], "MemoryUsed" -> 
+             Quantity[472, "Bytes"]]]], 
+        "TestsSucceededIndices" -> {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}, 
+        "TestsFailedIndices" -> {}, "TestsFailedWrongResultsIndices" -> {}, 
+        "TestsFailedWithMessagesIndices" -> {}, 
+        "TestsFailedWithErrorsIndices" -> {}]],
+      Editable->False,
+      SelectWithContents->True,
+      Selectable->False]}
+   },
+   GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+   GridBoxSpacings->{"Columns" -> {
+       Offset[0.27999999999999997`], {
+        Offset[2.0999999999999996`]}, 
+       Offset[0.27999999999999997`]}, "Rows" -> {
+       Offset[0.2], {
+        Offset[0.4]}, 
+       Offset[0.2]}}],
+  Function[BoxForm`e$, 
+   TableForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{
+  3.8123497299750957`*^9, {3.812349946328725*^9, 3.81234997395196*^9}, 
+   3.812350138606526*^9, 3.812350346249216*^9, 3.812350488150215*^9, {
+   3.812351116720195*^9, 3.812351140007243*^9}, 3.812351170871846*^9},
+ CellLabel->
+  "Out[5]//TableForm=",ExpressionUUID->"cdc7cc50-60c3-4043-a387-caab6b6e4d55"]
+}, Open  ]]
+},
+WindowSize->{1896, 1026},
+WindowMargins->{{12, Automatic}, {Automatic, 12}},
+FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 545, 10, 82, "Input",ExpressionUUID->"c955c369-4109-41dd-b003-c6bdc2aa7f73"],
+Cell[CellGroupData[{
+Cell[1128, 34, 966, 21, 51, "Input",ExpressionUUID->"beb87f6d-adaf-4f90-a04d-1b7d33c1fa18"],
+Cell[2097, 57, 16553, 310, 119, "Output",ExpressionUUID->"cdc7cc50-60c3-4043-a387-caab6b6e4d55"]
+}, Open  ]]
+}
+]
+*)
+
